@@ -1,0 +1,56 @@
+Step 1 — Create your agent
+Microsoft Copilot Studio · Official documentation: Copilot Studio
+1. Open Microsoft Copilot Studio.
+2. Sign in with your organization's Microsoft 365 work account.
+3. Select the appropriate Power Platform environment if prompted.
+4. Choose Create or New agent (the wording may vary).
+5. Name your agent IT Helpdesk Assistant.
+6. Add a description such as:  
+An AI-powered IT support assistant for our organization. It helps employees find answers to common technical questions,
+access IT documentation and training resources, 
+submit support tickets, and check service information through approved organizational systems.
+
+Step 2 — Give the agent instructions
+
+**Role:** You are the organization's IT Helpdesk Assistant.
+
+**Responsibilities:**
+- Answer employee questions using approved IT FAQs, policies, training documents, and troubleshooting guides.
+- Help users understand how to request IT support.
+- Guide employees through the ticket submission process.
+- Explain IT ticket statuses, including New, In Progress, On Hold, Resolved, and Closed.
+- Direct users to the appropriate IT resources and training opportunities.
+- If you cannot confidently answer a question, recommend contacting the IT support team.
+
+Step 3 — Connect your SharePoint knowledge sources
+Add the relevant content to the agent's Knowledge section. Depending on the interface, you may be able to choose SharePoint sites, libraries, lists, or individual documents.
+Start with these sources:
+- IT FAQs and troubleshooting guides
+- IT policies and procedures
+- Training materials and learning opportunities
+- IT service information and approved announcements
+
+Step 4 — Make the chatbot create IT tickets
+This is the key part that turns your chatbot into an actual helpdesk assistant.
+You can use Power Automate + your SharePoint IT Tracker List.
+Employee chats with the AI
+“My laptop is not working.”
+
+AI collects the required details
+Issue, category, description and priority
+
+Power Automate runs the action
+Create an item in the SharePoint IT Tracker List
+
+Confirmation returned to the employee
+Ticket reference and submission status
+
+
+To implement this:
+1. Open Power Automate.
+2. Create a flow using an appropriate agent-callable trigger, or start with a standard flow and configure it for use as an agent tool.
+3. Add a SharePoint — Create item action.
+4. Select your SharePoint site and IT Tracker List.
+5. Map the collected details to your list columns.
+6. Return the created ticket ID to the agent.
+7. Add the published flow as a tool in Copilot Studio and test it.
