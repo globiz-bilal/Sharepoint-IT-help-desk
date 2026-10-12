@@ -1,0 +1,52 @@
+If you are using a SharePoint List template, these are useful columns:
+1
+
+Ticket ID
+Unique reference number, such as IT-001.
+
+2
+
+Title
+Short issue description, e.g. Outlook access problem.
+
+3
+
+Description
+Details of the issue or request.
+
+
+
+4
+
+Requested By
+Employee who submitted the ticket.
+
+5
+
+Assigned To
+IT expert responsible for the request.
+
+6
+
+Category
+Hardware, Software, Network, Microsoft 365, Access, etc.
+
+7
+
+Priority
+Low, Medium, High, or Critical.
+
+8
+
+Status
+New, In Progress, On Hold, Resolved, or Closed.
+
+9
+
+Created Date
+Date the ticket was submitted.
+
+10
+
+Resolution / Comments
+Actions taken and the final solution.
